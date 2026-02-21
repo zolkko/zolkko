@@ -1,4 +1,4 @@
-#import "@preview/neat-cv:0.4.0": cv, side, entry, item-with-level, contact-info, social-links
+#import "@preview/neat-cv:0.6.2": cv, side, entry, item-with-level, contact-info, social-links
 
 #show: cv.with(
   author: (
@@ -29,7 +29,7 @@
 
   == Programming Languages
 
-  Rust, Scala, Python, SQL
+  Rust, Scala, WGSL, SQL
 
   \
 
@@ -41,7 +41,7 @@
 
   == Others:
 
-  Apache Spark, Slurm, MPI
+  Apache Spark, Slurm, MPI, HPE Cray EX (OLCF), Apptainer / Singularity
   
   #v(1fr)
 
@@ -60,7 +60,10 @@
   \
 
   In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing
-  the performance and resource usage of biostatistical pipelines.
+  the performance and resource usage of biostatistical and biocomputational pipelines to
+  optimize their runtime characteristics for both Beowulf and supercomputer environments (OLCF).
+  \
+
   My extensive experience as a Scala developer has given me a solid understanding of functional and type-level programming,
   which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers. \
   \
@@ -84,14 +87,13 @@
 #entry([
  - 10+ years of professional experience in the Information Technology industry;
  - Rich experience in Rust, Scala, Python programming;
- - Experience in team leadership;
- - Experience in software design, development, and deployment;
  - Solid background in functional and type-level programming paradigm;
  - Development and expertise highlights:
-   - HPC application development;
+   - HPC application development for supercomputers;
    - Client-server applications development;
    - Continuous Integration management;
-   - Advanced technical troubleshooting, application profiling and performance tuning.
+   - Advanced technical troubleshooting, application profiling and performance tuning;
+ - Experience in team leadership.
 ])
  
 = Experience
@@ -106,7 +108,9 @@
   (a framework based on S. Boettcher deal package) in a distributed environment. \
   \
 
-  My responsibilies were:
+  === Tech. responsibilies
+  - Prepare SIF containers to run biocomputational pipelines on OLCF supercomputer.
+  - Develop WGSL compute shaders to run some parts of the computational pipelines on GPGPU in a Beowulf cluster.
   - Made an extension for `rsmpi` to support return error codes. And based on those changes I implemented User-Level Fault Mitigation (MPI ULFM) logic to address partial cluster failures.
   - Performance optimization and tuning using vtune, mpip, heaptrack, dhat,
     llvm sanitizers, criterion and iai (cachegrind);
@@ -115,16 +119,21 @@
   - Contributed missing functionality to `special` crate (tri-gamma function),
     `rsmpi` (group splitting by colors and tags, User Level Failure Mitigation);
   - Design and implementation of auxiliary programs requested by the analytics department;
-  - Writing user and programmer guides, software design documents (tectonic, latex, confluence), SOWs;
-  - Automation of development and deployment processes (gitlab-ci, docker);
+  - Automation of development and deployment processes (gitlab-ci, podman);
   - HTTP API development using axum, utoipa and http4s for Scala-based services;
   - Implementing automated tests (property, unit, mutation, integration and e2e) and benchmarks (criterion, iai);
-  - Onboarding and technical-leading, helping team members to develop professional development plans,
-    conducting technical interviews, mentoring and conduction summer schools for rust programmers;
   - Bug fixing in HPC cluster environment (pmpi, vtune);
   - Developing and maintaining open source components required by our software: `kendalls` crate for Kendall’s tau-b rank correlation,
   `hoconlight` crate - a peg parser and deserializer of Akka hocon configuration files.
 
+  \
+  === Non technical
+  - Onboarding of programmers and scientists;
+  - Technical-leading and owning the product;
+  - Helping team members to develop professional development plans;
+  - Conducting technical interviews;
+  - Mentoring and conduction summer schools for rust programmers;
+  - Writing user and programmer guides, software design documents (tectonic, latex, confluence, typst), SOWs.
   \
   \
 
@@ -134,7 +143,7 @@
 
 
 #entry(
-  title: "Scala programmer",
+  title: "Scala, Rust programmer",
   institution: "Berg Biosystems",
   date: "2016 - 2019",
   [
@@ -143,7 +152,7 @@
   for more lightweight utilities and more granular control of task termination. \
   \
 
-  My responsibilies were:
+  === Responsibilies:
   - Developing utilities used in biostatistical pipelines;
   - Writing user guides, SOWs, RFCs;
   - Reviewing DOI:10.1089/cmb.2019.0210, DOI:10.3390/app11062466;
@@ -320,28 +329,67 @@
 )
 
 
+
+= Open Source Contributions
+
+#entry(
+  title: [
+    #link("https://crates.io/crates/special")[https://crates.io/crates/special] --- provides special functions for Rust
+  ],
+  [
+    - Added an implementation of the `tri-gamma` function.
+  ]
+)
+#entry(
+  title: [
+    #link("https://crates.io/crates/mpi")[https://crates.io/crates/mpi] --- MPI bindings for Rust
+  ],
+  [
+    - Added split by node / color functionallity.
+    - Ongoing effort on merging optional ULFM support and errors in function call results.
+  ]
+)
+#entry(
+  title: [
+    #link("https://crates.io/crates/kendalls")[https://crates.io/crates/kendalls] --- Kendall's $tau$-B
+  ],
+  [
+    - Maintainer.
+    - Implemented Kendall's $tau$-b algorithm.
+  ]
+)
+#entry(
+  title: [
+    #link("https://github.com/zolkko/hocon")[https://github.com/zolkko/hocon] --- lightweight HOCON parser
+  ],
+  [
+    - Maintainer, developed a parser to ease transition from Lightbend and Type-level stack (Scala) to Rust (`serde_yaml`).
+  ]
+)
+#entry(
+  title: [
+    #link("https://github.com/blumenplace/skju")[https://github.com/blumenplace/skju] --- eather quake detection BLE mesh network
+  ],
+  [
+    - Architecural design of the project, and mentoring.
+    - defmt interceptor for Renode simulator.
+    - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
+    - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
+    - (Ongoing effort) Sensor node's schematic and board prototype (KiCAD).
+  ]
+)
+
+#entry(
+  title: [
+    #link("https://github.com/ARMmbed/mbed-os")[https://github.com/ARMmbed/mbed-os]
+  ],
+  date: "2016",
+  [
+    - Bug fixes in Arm Mbed OS USB (CDC) for STM32.
+  ]
+)
+
 = Education
-
-#entry(
-  title: "Genomic networks",
-  institution: "Novosibirsk State University (NSU)",
-  date: "2025",
-  []
-)
-
-#entry(
-  title: "From science to drug development",
-  institution: "Blastim",
-  date: "2022",
-  []
-)
-
-#entry(
-  title: "NGS data analysis",
-  institution: "Blastim",
-  date: "2022",
-  []
-)
 
 #entry(
   title: "Master of Science in Software Engineering",
@@ -368,12 +416,71 @@
 )
 
 
-= Certificates, Awards, significant side activities
+= Significant Certificates and Awards
 
-#entry([
-  - Bioinformatics Contest (2021);
-  - Molecular biology (2019);
-  - Third Generation Sequencing using Oxford Nanopore (2019);
-  - Bug fixes in Arm Mbed OS USB (CDC) for STM32;
-  - Co-organizer of Voronezh's radio hobbyst club.
-])
+#entry(
+  title: "(Ongoing) Machine learning and neural networks in biology and medicine",
+  institution: "Novosibirsk State University (NSU)",
+  date: "2026",
+  [
+    
+  ]
+)
+
+
+#entry(
+  title: "Genomic networks",
+  institution: "Novosibirsk State University (NSU)",
+  date: "2025",
+  [
+    
+  ]
+)
+
+#entry(
+  title: "From science to drug development",
+  institution: "Blastim",
+  date: "2022",
+  [
+    
+  ]
+)
+
+#entry(
+  title: "NGS data analysis",
+  institution: "Blastim",
+  date: "2022",
+  [
+    
+  ]
+)
+
+#entry(
+  title: "Bioinformatics Contest",
+  date: "2021",
+  [
+    
+  ]
+)
+
+#entry(
+  title: "Molecular biology",
+  date: "2019",
+  []
+)
+
+#entry(
+  title: "Third Generation Sequencing using Oxford Nanopore",
+  date: "2019",
+  [
+    
+  ]
+)
+
+#entry(
+  title: "Co-organizer of Voronezh's radio hobbyst club",
+  date: "2012-2016",
+  [
+    
+  ]
+)
