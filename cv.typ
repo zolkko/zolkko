@@ -11,7 +11,7 @@
     linkedin: "zolkko",
     website: "https://blumen.place",
   ),
-  // profile-picture: image("zolkko.png"),
+  profile-picture: image("zolkko.png"),
 )
 
 
@@ -166,6 +166,7 @@
 )
 
 
+/*
 #entry(
   title: "Senior Software Developer",
   institution: "DataArt",
@@ -189,6 +190,7 @@
     Stack: Scala, Play Framework, PostgreSQL, Slick, TeamCity
   ]
 )
+*/
 
 #entry(
   title: "Senior Developer",
@@ -373,9 +375,9 @@
   [
     - Architecural design of the project, and mentoring.
     - defmt interceptor for Renode simulator.
-    - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
-    - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
-    - (Ongoing effort) Sensor node's schematic and board prototype (KiCAD).
+    // - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
+    // - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
+    // - (Ongoing effort) Sensor node's schematic and board prototype (KiCAD).
   ]
 )
 
