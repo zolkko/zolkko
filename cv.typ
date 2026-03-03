@@ -11,7 +11,7 @@
     linkedin: "zolkko",
     website: "https://blumen.place",
   ),
-  profile-picture: image("zolkko.png"),
+  profile-picture: image("zolkko.256x256.jpg"),
 )
 
 
