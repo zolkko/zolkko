@@ -6,7 +6,7 @@
     lastname: "Anisimov",
     phone: "+381629759226",
     email: "zolkko@gmail.com",
-    position: ("HPC, Rust, software engineer"),
+    position: ("HPC, Rust, Software engineer"),
     github: "zolkko",
     linkedin: "zolkko",
     website: "https://blumen.place",
@@ -41,7 +41,7 @@
 
   == Others:
 
-  Apache Spark, Slurm, MPI, HPE Cray EX (OLCF), Apptainer / Singularity
+  Apache Spark, Slurm, MPI, HPE Cray EX (OLCF), Apptainer / Singularity, podman, tapir, htt4s, fs2
   
   #v(1fr)
 
@@ -393,6 +393,17 @@
 
 = Education
 
+
+#entry(
+  title: "Certificate of Professional Development",
+  institution: "Novosibirsk State University (NSU)",
+  date: "2025-2026",
+  [
+    - Databaseses in biology and medicine. Genomic networks. (24.06.2025-25.08.2025 / N.542420891774).
+    - Machine learning and neural networks in biology and medicine. (Ongoing).
+  ]
+)
+
 #entry(
   title: "Master of Science in Software Engineering",
   institution: "Voronezh State Technical University",
@@ -424,16 +435,6 @@
   title: "(Ongoing) Machine learning and neural networks in biology and medicine",
   institution: "Novosibirsk State University (NSU)",
   date: "2026",
-  [
-    
-  ]
-)
-
-
-#entry(
-  title: "Genomic networks",
-  institution: "Novosibirsk State University (NSU)",
-  date: "2025",
   [
     
   ]
