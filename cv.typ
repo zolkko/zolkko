@@ -27,9 +27,11 @@
 
   = Skills
 
-  == Programming Languages
+  == Programming Languages and Tech.
 
-  Rust, Scala, WGSL, SQL
+  Rust, Scala, WGSL, PL/SQL \
+  \
+  ndarray (-linalg), wgpu, tokio, axum, MPI, Apache Slurm, Apache Spark, tapir, htt4s, fs2
 
   \
 
@@ -39,9 +41,18 @@
 
   \
 
-  == Others:
+  == Clouds and Containerization
+  
+  HPE Cray EX (OLCF), Apptainer / Singularity, podman
 
-  Apache Spark, Slurm, MPI, HPE Cray EX (OLCF), Apptainer / Singularity, podman, tapir, htt4s, fs2
+  \
+
+  == CI/DI
+
+  Gitlab CI, Github Actions, TeamCity, Ansible
+
+  \ 
+
   
   #v(1fr)
 
@@ -56,15 +67,15 @@
 = About Me
 
 #entry([
-  I am a seasoned professional programmer with more than 20 years of experience in various fields and domains. \
+  I am a seasoned professional programmer with more than 10+ years of experience in various fields and domains. \
   \
 
-  In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing
+  In recent years, I am working as a Rust HPC programmer in the biotech field, specializing in optimizing
   the performance and resource usage of biostatistical and biocomputational pipelines to
   optimize their runtime characteristics for both Beowulf and supercomputer environments (OLCF).
   \
 
-  My extensive experience as a Scala developer has given me a solid understanding of functional and type-level programming,
+  My extensive experience as a Scala developer has given me a solid understanding of functional, type-level and type driven programming,
   which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers. \
   \
 
@@ -101,7 +112,7 @@
 #entry(
   title: "HPC, Rust programmer",
   institution: "BPGBio",
-  date: "2019 - Present",
+  date: "Dec 2019 - Present",
   [
   The project aim was to learn the structure of biological networks from omics data assessed
   with patient data using a combined constraint-based approach and Bayesian score-based method
@@ -124,8 +135,7 @@
   - Implementing automated tests (property, unit, mutation, integration and e2e) and benchmarks (criterion, iai);
   - Bug fixing in HPC cluster environment (pmpi, vtune);
   - Developing and maintaining open source components required by our software: `kendalls` crate for Kendall’s tau-b rank correlation,
-  `hoconlight` crate - a peg parser and deserializer of Akka hocon configuration files.
-
+  `hoconlight` crate - a peg parser and deserializer of Akka hocon configuration files. \
   \
   === Non technical
   - Onboarding of programmers and scientists;
@@ -133,11 +143,10 @@
   - Helping team members to develop professional development plans;
   - Conducting technical interviews;
   - Mentoring and conduction summer schools for rust programmers;
-  - Writing user and programmer guides, software design documents (tectonic, latex, confluence, typst), SOWs.
-  \
+  - Writing user and programmer guides, software design documents (tectonic, latex, confluence, typst), SOWs. \
   \
 
-  Stack: Rust, Apache Arrow, BLAS/LAPACK (ndarray-linalg), MPI, Slurm, Apache Kafka
+  ***Tech. Stack***: Rust, Apache Arrow, BLAS/LAPACK (ndarray-linalg), MPI, Slurm, Apache Kafka
   ]
 )
 
@@ -145,32 +154,29 @@
 #entry(
   title: "Scala, Rust programmer",
   institution: "Berg Biosystems",
-  date: "2016 - 2019",
+  date: "Mar 2016 - Dec 2019",
   [
-  Design and Developed Mesos Framework to schedule and execute bioinformatics pipelines.
-  The framework mostly based on Lightbend stack with addition of TypeLevel stack (circe, cats-effect, fs2)
-  for more lightweight utilities and more granular control of task termination. \
-  \
+    Design and Developed Mesos Framework to schedule and execute bioinformatics pipelines.
+    The framework mostly based on Lightbend stack with addition of TypeLevel stack (circe, cats-effect, fs2)
+    for more lightweight utilities and more granular control of task termination. \
+    \
 
-  === Responsibilies:
-  - Developing utilities used in biostatistical pipelines;
-  - Writing user guides, SOWs, RFCs;
-  - Reviewing DOI:10.1089/cmb.2019.0210, DOI:10.3390/app11062466;
-  - Coordinating two teams of developers, resolving conflic situations;
+    === Responsibilies:
+    - Developing utilities used in biostatistical pipelines;
+    - Writing user guides, SOWs, RFCs;
+    - Reviewing DOI:10.1089/cmb.2019.0210, DOI:10.3390/app11062466;
+    - Coordinating two teams of developers, resolving conflic situations. \
+    \
 
-  \
-  \
-
-  Stack: Apache Mesos, Scala 2, Lightbend stack, TypeLevel stack, Apache Kafka
+    ***Tech. Stack***: Apache Mesos, Scala 2, Lightbend stack, Typelevel-stack (fs2, cats-effect), Apache Kafka, ndarray, ndarray-linalg, criterion.
   ]
 )
 
-
-/*
 #entry(
   title: "Senior Software Developer",
+  // North Shore, Care Tool NYS Module
   institution: "DataArt",
-  date: "2016-2016",
+  date: "Oct 2015 - Feb 2016",
   [
     US-based healthcare network and healthcare provider.
     I was working on a pluggable module, that
@@ -178,24 +184,23 @@
     and the internal Health Home system of the client.
     The module I developed aggregated data and events in the form of Web API call
     and CSV files from both systems and provided instruments to synchronize internal
-    state of these systems databases.
+    state of these systems databases. \
+    \
     - Assignment and billing workflows implementation;
     - Participating in tracking workflow implementation;
     - Initial data importers;
-    - Health Home tracking system integration layer.
-
-    \
+    - Health Home tracking system integration layer.\
     \
 
-    Stack: Scala, Play Framework, PostgreSQL, Slick, TeamCity
+    ***Tech. Stack***: Scala, Play Framework, PostgreSQL, Slick, TeamCity
   ]
 )
-*/
 
 #entry(
   title: "Senior Developer",
+  // Magellan, T&M POS 2.0
   institution: "DataArt",
-  date: "2016-2016",
+  date: "Jun 2015 - Oct 2015",
   [
     The goal of the project was to develop the sales system to be used by call center
     agents to book hotels for the clients.\
@@ -212,19 +217,17 @@
     - Integration with internal CRM system;
     - Next Caller and Piwik integration;
     - Payment gateway integration;
-    - Back-end RESTful API development.
-
-    \
+    - Back-end RESTful API development.\
     \
 
-    Stack:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible
+    **Tach Stack**:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible.
   ]
 )
 
 #entry(
   title: "Senior Software Developer",
   institution: "Wargaming, Global Map",
-  date: "2014-2016",
+  date: "Mar 2014 - Jun 2015",
   [
     The application allowed clan leaders to plan their strategy on capturing and controlling
     areas on the global world map, managing clan resources, participating in tournaments and landing battles.
@@ -233,32 +236,74 @@
 
     - Preparation of new game events;
     - Fixing bugs;
-    - Implemented "mini-quests" and corresponding reward, medal system.
-
-    \
+    - Implemented "mini-quests" and corresponding reward, medal system.\
     \
 
-    Stack: Python, Django, PostgreSQL, Celery, RabbitMQ
+    ***Tech. Stack***: Python, Django, PostgreSQL, Celery, RabbitMQ.
   ]
 )
 
 #entry(
-  title: "Senior Software Developer",
-  institution: "DataArt",
-  date: "2012-2014",
+  title: "Tech. Lead",
+  institution: "BounceCars",
+  date: "Sep 2013 - Feb 2014",
   [
-    I worked on a web-based dashboard and computational engine that used
-    statistical methods to predict prospective markets for Drug sales. \
+    The project aimed to develop mobile applications for taxi drivers and passengers,
+    an automated dispatching system to manage jobs, and an administrative interface to manage the system.
+    The administration system tracked drivers’ statistics and location; it issued receipts for passengers and statements for drivers.
+    The dispatching system automatically searched for and assigned drivers to passengers, and served as a high-load interface for mobile applications.
+    All three parts of the system communicated with each other through a custom-made message-based channel.
     \
-
-    Stack: ASP.NET, C\#, VBA, MS Server
+    
+    Activities:​
+    - Developing front-end and accounting back-end;
+    - Creating a public cloud application to private cloud integration;
+    - Refactoring and improving the application engine;
+    - Deploying and managing a continuous integration server.\
+    \
+    
+    ***Tech. Stack***: Django, Celery, Redis, webapp2, Backbone, TeamCity, PostgreSQL, Google Cloud Platform.
   ]
 )
 
 #entry(
   title: "Software Developer",
+  // BTQ Financial
+  // TODO: BTQ Health Home Patient Tracking System
+  institution: "BTQ Finacial",
+  date: "Mar 2013 - Sep 2013",
+  [
+    Worked on the application that tracks care management activities for adults with chronic medical and behavioral conditions.
+    \
+    I was responsible for developing  the web interface and backend ETL service.
+    The ETL layer is to integrate with external services provided by NyS Department of Health and other health care service providers.
+    The application has strong security and audit, which make it compliant to HIPPA.\
+    \
+
+    ***Tech. Stack***: C\#, JavaScript, T-SQL
+  ]
+)
+
+
+#entry(
+  title: "Senior Software Developer",
+  // ZS Forecast Manager
+  institution: "ZS",
+  date: "Jan 2011 - Mar 2013",
+  [
+    I worked on a web-based dashboard and computational engine that used
+    statistical methods to predict prospective markets for Drug sales. \
+    \
+
+    ***Tech. Stack***: ASP.NET, C\#, VBA, MS SQL Server, T-SQL.
+  ]
+)
+
+#entry(
+  title: "Software Developer",
+  // iGlobalEMR
   institution: "DataArt",
-  date: "2010-2011",
+  date: "Aug 2010 - Jan 2011",
   [
     The application allowed clan leaders to plan their strategy on capturing and controlling
     areas on the global world map, managing clan resources, participating in tournaments and landing battles.
@@ -267,15 +312,13 @@
 
     - Release management;
     - CI/DI pipelines;
-    - Design and Develop software that integrates ophthalmologic perimeters with EMR system.
-
+    - Design and Develop software that integrates ophthalmologic perimeters with EMR system;
+    - Implemented a report generation engine. \
     \
-    \
 
-    Stack: C\#, WPF, Silverlight
+    ***Tech. Stack***: ASP.NET, C\#, WPF, Silverlight.
   ]
 )
-
 
 #entry(
   title: "Software Developer",
@@ -288,12 +331,10 @@
     \
 
     New feature development and bug fixing for Medical Staff Management and Recruitment System for the USA market.
-    I modernized the front-end part of the system such that it works not only on IE6 and introduced PrototypeJS.
-
-    \
+    I modernized the front-end part of the system such that it works not only on IE6 and introduced PrototypeJS. \
     \
 
-    Stack: C\#, MS Server, jQuery
+    ***Tech. Stack***: ASP.NET, C\#, MS SQL Server, T-SQL, jQuery.
   ]
 )
 
@@ -309,12 +350,10 @@
     and a website that customers can use to buy ticks online. 
     - I worked on the tickets exchange back-end service;
     - porting Delphi GUI application to gtkmm;
-    - integration with a cash register machine, and custom PAM development.
-
-    \
+    - integration with a cash register machine, and custom PAM development. \
     \
 
-    Stack: Firebird, PHP, C++ (gtkmm)
+    ***Tech. Stack***: Firebird, PHP, C++ (gtkmm).
   ]
 )
 
@@ -326,13 +365,25 @@
     - Development of modules for the company's internal CMS. \
     \
 
-    Stack: Python, PHP
+    ***Tech. Stack***: Python, mailman.
   ]
 )
 
 
-
 = Open Source Contributions
+
+#entry(
+  title: [
+    #link("https://github.com/blumenplace/skju")[https://github.com/blumenplace/skju] --- eather quake detection BLE mesh network
+  ],
+  [
+    - Architecural design of the project, and mentoring.
+    - defmt interceptor for Renode simulator.
+    // - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
+    // - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
+    // - (Ongoing effort) Sensor node's schematic and board prototype (KiCAD).
+  ]
+)
 
 #entry(
   title: [
@@ -368,18 +419,6 @@
     - Maintainer, developed a parser to ease transition from Lightbend and Type-level stack (Scala) to Rust (`serde_yaml`).
   ]
 )
-#entry(
-  title: [
-    #link("https://github.com/blumenplace/skju")[https://github.com/blumenplace/skju] --- eather quake detection BLE mesh network
-  ],
-  [
-    - Architecural design of the project, and mentoring.
-    - defmt interceptor for Renode simulator.
-    // - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
-    // - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
-    // - (Ongoing effort) Sensor node's schematic and board prototype (KiCAD).
-  ]
-)
 
 #entry(
   title: [
@@ -393,14 +432,15 @@
 
 = Education
 
-
 #entry(
   title: "Certificate of Professional Development",
   institution: "Novosibirsk State University (NSU)",
   date: "2025-2026",
   [
-    - Databaseses in biology and medicine. Genomic networks. (24.06.2025-25.08.2025 / N.542420891774).
-    - Machine learning and neural networks in biology and medicine. (Ongoing).
+    - Machine learning and neural networks in biology and medicine. \
+      (27.11.2025-27.03.2026 / N.542425935861).
+    - Databaseses in biology and medicine. Genomic networks. \
+      (24.06.2025-25.08.2025 / N.542420891774).
   ]
 )
 
@@ -432,38 +472,23 @@
 = Significant Certificates and Awards
 
 #entry(
-  title: "(Ongoing) Machine learning and neural networks in biology and medicine",
-  institution: "Novosibirsk State University (NSU)",
-  date: "2026",
-  [
-    
-  ]
-)
-
-#entry(
   title: "From science to drug development",
   institution: "Blastim",
   date: "2022",
-  [
-    
-  ]
+  []
 )
 
 #entry(
   title: "NGS data analysis",
   institution: "Blastim",
   date: "2022",
-  [
-    
-  ]
+  []
 )
 
 #entry(
   title: "Bioinformatics Contest",
   date: "2021",
-  [
-    
-  ]
+  []
 )
 
 #entry(
@@ -475,15 +500,11 @@
 #entry(
   title: "Third Generation Sequencing using Oxford Nanopore",
   date: "2019",
-  [
-    
-  ]
+  []
 )
 
 #entry(
   title: "Co-organizer of Voronezh's radio hobbyst club",
   date: "2012-2016",
-  [
-    
-  ]
+  []
 )
