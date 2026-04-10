@@ -192,7 +192,7 @@
     - Health Home tracking system integration layer.\
     \
 
-    ***Tech. Stack***: Scala, Play Framework, PostgreSQL, Slick, TeamCity
+    ***Tech. Stack***: Scala, Play Framework, PostgreSQL, Slick, TeamCity.
   ]
 )
 
