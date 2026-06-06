@@ -29,21 +29,32 @@
 
   == Programming Languages and Tech.
 
-  Rust, Scala, WGSL, PL/SQL \
-  \
-  ndarray (-linalg), wgpu, tokio, axum, MPI, Apache Slurm, Apache Spark, tapir, htt4s, fs2
+  Rust, Scala, WGSL, PL/SQL
+  \ \
 
-  \
+  ndarray (-linalg), wgpu, tokio, axum,
+  \ \
+  
+  MPI (rsmpi),
+  \ \
+  
+  Apache Spark, tapir, htt4s, fs2
+  \ \
 
   == Databases, storage formats and a like.
 
-  PostgreSQL, Redis, Apache Kafka, Apache Arrow
+  PostgreSQL, Valkey (Redis), Apache Kafka, Apache Arrow
 
   \
 
+  == Clouds, Clusters
+  
+  HPE Cray EX (OLCF), Apache Slurm
+  \
+  
   == Clouds and Containerization
   
-  HPE Cray EX (OLCF), Apptainer / Singularity, podman
+  Apptainer / Singularity, podman, kind
 
   \
 
@@ -79,15 +90,17 @@
   which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers. \
   \
 
-  Additionally, I have completed graduate-level courses in Bioinformatics, Whole Genome (WGS) and Single-Cell Sequencing,
-  and Genomic Networks. This formal training demonstrates my passion and dedication to delivering top-quality software,
-  as truly effective solutions require a deep understanding of the field. \
-  \
-
   My efforts, to a sensible extent, helped biologists to develop at least two molecules for treating orphan diseases,
   and one of them is out of clinical trials. \
   \
 
+  While holding MS degree in computer science, I also graduated from state approved continuing education courses in
+  Bioinformatics, AI and Machine Learning in Biology and Medicine, Whole Genome (WGS) and Single-Cell Sequencing,
+  and Genomic Networks.
+  This formal training demonstrates my passion and dedication to delivering top-quality software,
+  as truly effective solutions require a deep understanding of the field. \
+  \
+  
   Besides that I have contributed to the back-end development of a well-known MMO game, an IoT framework,
   a London minicab automation system, and a bus station automation project.
 ])
