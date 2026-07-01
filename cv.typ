@@ -60,7 +60,7 @@
 
   == CI/DI
 
-  Gitlab CI, Github Actions, TeamCity, Ansible
+  Gitlab CI, Github Actions, Ansible
 
   \ 
 
@@ -69,9 +69,9 @@
 
   = Languages
 
-  #item-with-level("English", 3, subtitle: "B2+")
-  #item-with-level("Serbian", 2, subtitle: "B1")
-  #item-with-level("Russian", 5, subtitle: "C2")
+  #item-with-level("English", 3, subtitle: " B2+")
+  #item-with-level("Serbian", 2, subtitle: " B1")
+  #item-with-level("Russian", 5, subtitle: " C2")
 ]
 
 
@@ -81,7 +81,7 @@
   I am a seasoned professional programmer with more than 10+ years of experience in various fields and domains. \
   \
 
-  In recent years, I am working as a Rust HPC programmer in the biotech field, specializing in optimizing
+  In recent years, I have been working as a Rust HPC programmer in the biotech field, specializing in optimizing
   the performance and resource usage of biostatistical and biocomputational pipelines to
   optimize their runtime characteristics for both Beowulf and supercomputer environments (OLCF).
   \
@@ -233,7 +233,7 @@
     - Back-end RESTful API development.\
     \
 
-    **Tach Stack**:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible.
+    **Tech. Stack**:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible.
   ]
 )
 
@@ -390,7 +390,7 @@
     #link("https://github.com/blumenplace/skju")[https://github.com/blumenplace/skju] --- eather quake detection BLE mesh network
   ],
   [
-    - Architecural design of the project, and mentoring.
+    - Architectural design of the project, and mentoring.
     - defmt interceptor for Renode simulator.
     // - (Ongoing effort) iOS (Swift) integration with Rust logic through uniffi.
     // - (Ongoing effort) Sensor nodes' gateway (nrf91) MQTT over LTE-M.
@@ -452,7 +452,7 @@
   [
     - Machine learning and neural networks in biology and medicine. \
       (27.11.2025-27.03.2026 / N.542425935861).
-    - Databaseses in biology and medicine. Genomic networks. \
+    - Databases in biology and medicine. Genomic networks. \
       (24.06.2025-25.08.2025 / N.542420891774).
   ]
 )
@@ -466,7 +466,7 @@
 )
 
 #entry(
-  title: "Bachelor's Degree in Electrical Engeneering",
+  title: "Bachelor's Degree in Electrical Engineering",
   institution: "Ulyanovsk State Technical University",
   location: "Ulyanovsk, Russia",
   date: "2007",
