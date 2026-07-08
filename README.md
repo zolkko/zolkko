@@ -1,11 +1,11 @@
 <h1 align="center">Hi, I'm zolkko 👋</h1>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=zolkko&show_icons=true&theme=default&hide_border=true&count_private=true" alt="zolkko's GitHub stats" />
+  <img src="https://github-readme-extended.vercel.app/api?username=zolkko&show_icons=true&theme=default&hide_border=true&count_private=true" alt="zolkko's GitHub stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zolkko&layout=compact&hide_border=true&theme=default" alt="Top languages" />
+  <img src="https://github-readme-extended.vercel.app/api/top-langs/?username=zolkko&layout=compact&hide_border=true&theme=default" alt="Top languages" />
 </p>
 
 <p align="center">
