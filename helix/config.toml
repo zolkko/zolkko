@@ -1,0 +1,17 @@
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 0
+
+[keys.normal]
+"C-q" = ":buffer-close"
+
+[keys.insert]
+"C-space" = "completion"
+"C-q" = ":buffer-close"

@@ -1,0 +1,19 @@
+[[languages]]
+name = "swift"
+language-servers = [
+  { name = "sourcekit-lsp", command = "xcrun sourcekit-lst" }
+]
+
+[[language]]
+name = "toml"
+scope = "source.toml"
+file-types = ["toml"]
+comment-token = "#"
+indent = { tab-width = 2, unit = " " }
+auto-format = true
+language-servers = ["taplo"]
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "clippy" }
+procMacro = { enable = true }
+cargo = { allFeatures = false }
