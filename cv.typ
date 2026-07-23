@@ -29,16 +29,17 @@
 
   == Programming Languages and Tech.
 
-  Rust, Scala, WGSL, PL/SQL
+  Rust, Scala, WGSL, PL/SQL, MPI
+  \ \
+  
+  === Rust tech. stak
+
+  ndarray (-linalg), wgpu, tokio, axum, apache arrow, rsmpi.
   \ \
 
-  ndarray (-linalg), wgpu, tokio, axum,
-  \ \
+  === Scala tech. stack
   
-  MPI (rsmpi),
-  \ \
-  
-  Apache Spark, tapir, htt4s, fs2
+  Apache Spark, tapir, cats, cats-effect,  htt4s, fs2, Akka classic.
   \ \
 
   == Databases, storage formats and a like.
@@ -54,7 +55,7 @@
   
   == Clouds and Containerization
   
-  Apptainer / Singularity, podman, kind
+  Apptainer (Singularity), podman, kind
 
   \
 
@@ -65,6 +66,32 @@
   \ 
 
   
+  #v(1fr)
+
+= Education
+=== Novosibirsk State University, 2025-2026
+Certificate of Professional Development \
+\ \
+- Genomic networks. Advanced class. (02 May 2026 - 17 Jul 2026).
+- Machine learning and neural networks in biology and medicine. (27 Dec 2025 - 27 Mar 2026 / N.542425935861).
+- Databases in biology and medicine. Genomic networks. (24 Jun 2025 - 25 Aug 2025 / N.542420891774).
+
+\ \
+
+=== Voronezh State Technical University, 2010
+Master of Science in Software Engineering
+
+\ \
+
+=== Ulyanovsk State Technical University, 2007
+Bachelor's Degree in Electrical Engineering
+
+\ \
+
+=== Uljanovskij Aviacionij Koledzh, 2004
+College Degree in Software Engeneering
+
+
   #v(1fr)
 
   = Languages
@@ -450,10 +477,12 @@
   institution: "Novosibirsk State University (NSU)",
   date: "2025-2026",
   [
+    - Genomic networks. Advanced class.  \
+      (02 May 2026 - 17 Jul 2026)
     - Machine learning and neural networks in biology and medicine. \
-      (27.11.2025-27.03.2026 / N.542425935861).
+      (27 Dec 2025 - 27 Mar 2026 / N.542425935861).
     - Databases in biology and medicine. Genomic networks. \
-      (24.06.2025-25.08.2025 / N.542420891774).
+      (24 Jun 2025 - 25 Aug 2025 / N.542420891774).
   ]
 )
 
@@ -478,7 +507,7 @@
   institution: "Uljanovskij Aviacionij Koledzh",
   location: "Ulyanovsk, Russia",
   date: "2004",
-  []
+  [ - ]
 )
 
 
