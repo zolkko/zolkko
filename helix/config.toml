@@ -15,7 +15,7 @@ skip-levels = 0
 [keys.normal.space]
 1 = [
   ":sh tmux display-popup -E -w 90%% -h 90%% -d '#{pane_current_path}' gitui",
-  ":reload-all"
+  ":reload-all",
 ]
 
 [keys.insert]
