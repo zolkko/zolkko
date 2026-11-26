@@ -12,6 +12,12 @@ skip-levels = 0
 [keys.normal]
 "C-q" = ":buffer-close"
 
+[keys.normal.space]
+1 = [
+  ":sh tmux display-popup -E -w 90%% -h 90%% -d '#{pane_current_path}' gitui",
+  ":reload-all"
+]
+
 [keys.insert]
 "C-space" = "completion"
 "C-q" = ":buffer-close"

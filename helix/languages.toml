@@ -15,5 +15,19 @@ language-servers = ["taplo"]
 
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
-procMacro = { enable = true }
 cargo = { allFeatures = false }
+procMacro = { enable = true }
+
+[language-server.rust-analyzer.config.check]
+command = "clippy" # check
+workspace = true
+allTargets = true
+extraArgs = ["--", "-W", "clippy::pedantic"]
+
+[language-server.rust-analyzer.config.inlayHints]
+typeHints.enable = true
+parameterHints.enable = true
+chainingHints.enable = true
+closureReturnTypeHints.enable = "skip_trivial"   # "never" | "always" | "skip_trivial"
+lifetimeElisionHints.enable = "skip_trivial"
+maxLength = 25
